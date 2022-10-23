@@ -14,6 +14,7 @@ import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
+import Container from "views/admin/dataTables1";
 import RTL from "views/admin/rtl";
 
 // Auth Imports
@@ -26,6 +27,13 @@ const routes = [
     path: "/default",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: MainDashboard,
+  },
+  {
+    name: "Container Dashboard",
+    layout: "/admin",
+    path: "/dataTables1",
+    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    component: Container,
   },
   {
     name: "NFT Marketplace",
